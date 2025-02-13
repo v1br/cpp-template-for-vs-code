@@ -14,14 +14,7 @@ The project is organized as follows:
 You can extend the project structure to include more directories like tests for unit tests or docs for documentation.
 
 ### Configure Project
-To start building and running the project, follow these steps:
-
-**Manually adding libraries**
-Download or build your desired libraries.
-Place them in the libs folder (e.g., libs/sfml for SFML). Edit the `Makefile` to include the correct paths for headers and libraries.
-
-**Using Conan to Add Dependencies**
-Conan simplifies adding external libraries to your project. To use Conan, create or modify the `conanfile.txt` to add the libraries you need. For example, to add fmt:
+To manually add libraries, download or build your desired libraries and place them in the libs folder (e.g., libs/sfml for SFML). Edit the `Makefile` to include the correct paths for headers and libraries. Conan simplifies adding external libraries to your project. To use Conan, create or modify the `conanfile.txt` to add the libraries you need. For example, to add fmt:
 
 ```
 [requires]
@@ -36,9 +29,6 @@ conan profile detect
 conan install . --build=missing
 ```
 After installation, include the necessary paths (headers and libraries) in your `Makefile`.
-
-Build and Run the Project
-You can build and run the project using the following commands:
 
 ### Build Project
 You can build and run the project using the following commands:
