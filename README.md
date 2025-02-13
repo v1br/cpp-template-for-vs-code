@@ -33,7 +33,9 @@ You can extend the project structure to include more directories like tests for 
 
 ### Configure Project
 <p>
-To manually add libraries, download or build your desired libraries and place them in the libs folder (e.g., libs/sfml for SFML). Edit the `Makefile` to include the correct paths for headers and libraries. Conan simplifies adding external libraries to your project. To use Conan, create or modify the `conanfile.txt` to add the libraries you need. For example, to add fmt:
+To manually add libraries, download or build your desired libraries and place them in the libs folder (e.g., libs/sfml for SFML). Edit the `Makefile` to include the correct paths for headers and libraries. 
+
+Conan simplifies adding external libraries to your project. To use Conan, create or modify the `conanfile.txt` to add the libraries you need. For example, to add fmt:
 
 ```
 [requires]
